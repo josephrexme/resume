@@ -1,0 +1,230 @@
+/* 
+	General Stylesheet
+*/
+
+/* =RESET
+=------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}:focus{outline:0}body{line-height:1;color:black;background:white}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:""""}
+
+/* =GENERAL
+--------------------- */
+
+body{
+	
+	background-color:#4C535C;
+	
+	/* Other Background Options
+	
+	background:#D1D1D1 url(images/bg-body.jpg) repeat top left;
+	background:#D1D1D1 url(images/bg-body-2.jpg) repeat top left;
+	background-color:#4C535C;
+	background-color:#999999;
+	background-color:#393939;
+	background-color:#5a5a5a;
+	
+	*/
+		
+	color:#454545;
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:22px;
+	padding:50px 0;
+}
+
+	a{ color:#2F6AB3; } 
+	a:hover{ color:#2E4E69; }
+	
+	strong{ font-weight:700; }
+	em{ font-style:italic; }
+	
+	/* Clear Fix Hack - add  class="fixed"  to div's that have floated elements in them */
+	.fixed:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+		.fixed{display:block;}
+		/*  \*/
+		.fixed{min-height:1%;}
+		* html .fixed{height:1%;}
+	
+	.clear{ clear:both; }
+	.block{ display:block; }
+	
+	.float-left{ float:left; }
+	.float-right{ float:right; }
+	
+	.img-align-left{ margin:5px 10px 0 0; }
+	.img-align-right{ margin:5px 0 0 10px; }
+	
+	.text-align-right{   text-align:right;   }
+	.text-align-center{  text-align:center;  }
+	.text-align-justify{ text-align:justify; }
+	
+	.col-1{ width:700px; }
+	.col-2{ width:460px; }
+	.col-3{ width:220px; }
+	
+	.divider, .divider2	{ height:15px; margin-left:-35px; margin-right:-35px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color:#F8F8F8; }
+	 
+		.divider{ clear:both;}
+		.divider2{ margin-bottom:30px; }
+	
+	.padded-right{ padding-right:20px; }
+		
+		
+/* =LAYOUT
+----------------------------------*/
+
+#wrap{ width:780px; margin:0 auto; z-index:100; position:relative;  }
+
+	#header{ background:url(images/bg-header.png) no-repeat top left; padding:5px 40px 0px 40px; }
+	
+		#block-top{ background-color:#eee; border:1px solid #ddd; border-top:none; height:30px; margin-bottom:40px;}
+
+		#personal-info{ }
+			
+			#picture-of-you{ float:left; display:block; border:1px solid #ccc; padding:5px; margin-right:20px; }
+			#picture-of-you img{ margin:0; padding:0; border:none;  }
+			
+			#name{ font-size:40px; font-weight:bold; padding-top:30px; letter-spacing:-2px; color:#444444; margin-bottom:20px; }
+			#what-you-do{ font-size:18px; font-weight:normal; color:#3279BB; }
+		
+		ul#nav{ list-style:none; float:right; }
+			
+			ul#nav li{ display:inline; float:left; padding:9px 4px; float:left; color:#ccc; }
+			ul#nav li a{ font-size:15px; text-transform:uppercase; text-decoration:none; color:#ccc; }
+			ul#nav li a:hover{ color:#444; }
+			ul#nav li a.active{ color:#444; }
+			
+	#content{ background:url(images/bg-content.png) repeat-y top left; padding:30px 40px 30px 40px; }
+		
+	#footer{ background:url(images/bg-footer.png) no-repeat bottom left; padding:0px 40px 30px 40px; height:80px;  }
+		
+		#copyright{ color:#666; float:left; }
+		#top{ color:#666; float:right; text-decoration:none; }
+
+
+/* =CV
+----------------------------------*/
+
+	.cv-section{ margin-bottom:25px; }
+		.last{ margin-bottom:0px; }
+		
+		li.cv-item  p{ margin-bottom:10px; }
+		li.cv-item ul{ list-style:inside; padding-bottom:10px; list-style-type:disc; }
+		li.cv-item ol{ list-style:inside; list-style-type:decimal; padding-bottom:10px; }
+	
+		h2.cv-section-name{ text-transform:uppercase; font-size:22px; padding-bottom:10px; color:#2F6AB3;  }
+		ul.cv-section-items{ list-style:outside; list-style-type:none;  }
+		
+		ul.cv-section-items li.cv-item{ border-top:1px solid #DBDEE2; padding:10px 15px; }
+		
+			ul.cv-section-items li.cv-item h4{ font-size:12px; float:right; font-weight:normal; color:#666; }
+			ul.cv-section-items li.cv-item h2{ font-size:16px; font-weight:bold; color:#272D36; }
+			ul.cv-section-items li.cv-item h3{ font-size:14px; font-style:italic; padding-bottom:10px; font-weight:normal;}
+			
+			ul.cv-section-items li span.topic{ font-weight:bold; display:block; float:left; width:150px;  }
+			
+			ul.cv-section-items li span.level{ width:140px; display:block; float:left; }
+					
+					ul.cv-section-items li span.l-1{ text-indent:-9999px; background:#ffffff url(images/level-1.jpg) no-repeat top left; }
+					ul.cv-section-items li span.l-2{ text-indent:-9999px; background:#ffffff url(images/level-2.jpg) no-repeat top left; }
+					ul.cv-section-items li span.l-3{ text-indent:-9999px; background:#ffffff url(images/level-3.jpg) no-repeat top left; }
+					ul.cv-section-items li span.l-4{ text-indent:-9999px; background:#ffffff url(images/level-4.jpg) no-repeat top left; }
+					ul.cv-section-items li span.l-5{ text-indent:-9999px; background:#ffffff url(images/level-5.jpg) no-repeat top left; }
+					ul.cv-section-items li span.l-6{ text-indent:-9999px; background:#ffffff url(images/level-6.jpg) no-repeat top left; }
+					ul.cv-section-items li span.l-7{ text-indent:-9999px; background:#ffffff url(images/level-7.jpg) no-repeat top left; }			
+			
+	#cv-1{}
+			
+		#cv-1 ul.cv-section-items li span.level{ margin-right:20px; }
+		
+	#cv-2{}
+				
+		#cv-2 h2.cv-section-name{ border-top:3px solid #DBDEE2; width:150px; float:left; padding-top:15px; }	
+		#cv-2 ul.cv-section-items{ margin-top:1px; width:550px; float:right; }
+		#cv-2 ul.cv-section-items li span.level{ margin-right:10px; margin-bottom:10px; }
+						
+		#cv-2 #technical-skills ul.cv-section-items li span.topic{ width:370px; }
+					
+	#cv-3{}
+		
+		#cv-3 h2.cv-section-name{ padding-top:15px; border-top:6px solid #DBDEE2; }	
+		#cv-3 ul.cv-section-items li.cv-item{ padding:10px 1px;}
+		#cv-3 ul.cv-section-items li.cv-item h4{ float:left; width:150px; }
+		#cv-3 ul.cv-section-items li span.topic{ width:150px; }
+		#cv-3 ul.cv-section-items li span.level{ margin-right:10px;}
+		
+		#cv-3 ul.cv-section-items li.cv-item .cv-item-content{ float:right; width:540px; }
+		#cv-3 #technical-skills ul.cv-section-items li span.topic{ float:none; width:540px; font-size:16px; }
+
+					
+/* =PORTFOLIO
+----------------------------------*/
+	
+	h2.title{ color:#2F6AB3; font-size:24px; padding-bottom:10px; text-transform:uppercase; }
+		
+	#portfolio{ border-top:1px solid #DBDEE2; padding-top:30px; }
+	
+		#portfolio h2{ font-size:24px; color:#2F6AB3; margin-bottom:10px; }
+		#portfolio  p{ margin-bottom:10px; }
+		#portfolio ul{ list-style: disc; padding-bottom:10px; list-style-type: disc; list-style-position:inside; }
+		#portfolio ol{ list-style: decimal; list-style-type:decimal; padding-bottom:10px; list-style-position:inside; }
+		
+		#portfolio .portfolio-item{ margin-bottom:30px;}
+		#portfolio .portfolio-item img{ cursor:pointer; } /* fix - IE7 didn't display cursor even though it is clickable because of the border inset plugin */
+			
+		#portfolio a.bordered{ border:1px solid #e1e1e1; padding:1px; display:block; }
+			
+		#portfolio a.read-more{ border:1px solid #e1e1e1; background-color:#fdfdfd; padding:4px 9px; display:block; float:left; text-decoration:none; }
+		#portfolio a.read-more:hover{ text-decoration:underline; }
+		
+		#portfolio .portfolio-pagination{ }
+		
+			#portfolio .portfolio-pagination ul{ list-style:none; }
+			#portfolio .portfolio-pagination ul li{ display:inline; }
+			#portfolio .portfolio-pagination ul li a{ display:block; float:left; padding:4px 9px; margin-right:7px; border:1px solid #DBDEE2;
+			 										  background-color:#fdfdfd; text-decoration:none; }
+			#portfolio .portfolio-pagination ul li a:hover, #portfolio .portfolio-pagination ul li a.active{ background-color:#f2f2f2; text-decoration:underline; }
+					
+					
+/* =CONTACT
+----------------------------------*/
+	
+	#contact{ border-top:1px solid #DBDEE2; padding-top:30px; margin-bottom:40px; }
+	
+	#social{ width:208px; padding:5px 5px 15px 5px ; border:1px solid #ccc; background:#f4f4f4 url(images/bg-tweet.jpg) no-repeat bottom left; }
+		
+		ul#social-media{ list-style:none; height:26px; margin-top:20px; }
+			
+			ul#social-media li{ display:inline; }
+			ul#social-media li a{ display:block; float:left; padding-top:3px; margin-left:5px;}
+			ul#social-media li a.last{ margin-right:0px; }	
+		
+	#contact-form{ margin-top:20px; }
+	
+		#contact-form p{clear:both;margin-bottom:10px;}
+		#contact-form input,textarea{background-color:#fff;border:1px solid #ccc;color:#515151;padding:5px;width:300px;}
+		#contact-form textarea{height:100px;width:350px;}
+		#btn{ width:80px; }
+			
+	#formstatus{font-weight:700; font-size:12px; line-height:10px; }
+		
+		.formstatuserror{color:#FF0000;}
+		.formstatusok{color:#0C3;}	
+		
+												
+/* =OTHER
+----------------------------------*/
+	
+	/* Print and Download Buttons */
+	a#print{ background:#ffffff url(images/bg-print.jpg) no-repeat top center; border:1px solid #ccc; display:block; height:24px; padding:2px; 
+			 position:absolute; right:765px; text-indent:-9999px; top:271px; width:24px; z-index:110; }
+	
+	a#download{ background:#ffffff url(images/bg-download.jpg) no-repeat top center; border:1px solid #ccc; display:block; height:24px; padding:2px;
+				position:absolute; right:765px; text-indent:-9999px; top:300px; width:24px; z-index:111; }
+	
+		a#print:hover, a#download:hover{ padding-right:12px; }
+
+	/* no javascript support */
+	
+	#nojs{ padding:10px; background-color:#AE0000; text-align:center; font-weight:bold; color:#fff; margin-top:-50px; margin-bottom:50px; }
+
+	
+

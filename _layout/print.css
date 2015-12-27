@@ -1,0 +1,78 @@
+/* 
+	Print Stylesheet
+*/
+ @media print{
+ 	*{
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a{text-decoration: underline; }
+	a:visited{ text-decoration: underline; }
+	a[href]:after{ content: " (" attr(href) ")"; }
+	abbr[title]:after{
+    	content: " (" attr(title) ")";
+	}
+	/* Don't show links for images, or javascript/internal links */
+	.ir a:after{ content: ""; }
+	a[href^="javascript:"]:after, a[href^="#"]:after{
+		content: "";
+	}
+	pre, blockquote{
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead{ display: table-header-group; }
+	tr{ page-break-inside: avoid; }
+	img{
+		page-break-inside: avoid;
+		max-width: 100% !important;
+	}
+	@page{ margin: 0.5cm; }
+
+  	p, h2, h3{
+    	orphans: 3;
+    	widows: 3;
+	}
+	h2, h3{ page-break-after: avoid; }
+	#wrap{ width: 100%; margin: 10px; float: none; }
+	#header, #footer, a#print, a#download{ display:none; }
+
+	#content{ padding:0; }
+	
+	.col-1{ width: 100%; }
+	
+	h2.cv-section-name{ font-size:16px; font-weight:bold; border-bottom:none; }
+	
+	ul.cv-section-items li.cv-item h4{ margin-right:10px; }
+	
+	ul.cv-section-items li span.l-1,
+	ul.cv-section-items li span.l-2,
+	ul.cv-section-items li span.l-3,
+	ul.cv-section-items li span.l-4,
+	ul.cv-section-items li span.l-5,
+	ul.cv-section-items li span.l-6,
+	ul.cv-section-items li span.l-7{ text-indent:0px; background:none; }
+
+	cv-2{}
+	
+		#cv-2 h2.cv-section-name{ float:none; width:100%; border-top:none; }
+		#cv-2 ul.cv-section-items{ float:none; width:100%; }
+		#cv-2 #technical-skills ul.cv-section-items li span.topic{ width:150px; }
+	
+	cv-3{}
+	
+		#cv-3 h2.cv-section-name{ float:none; width:100%; border-top:none; }
+		#cv-3 ul.cv-section-items li.cv-item h4{ float:none; width:100%; }
+		#cv-3 ul.cv-section-items li.cv-item .cv-item-content{ float:none; width:100%; }
+		#cv-3 #technical-skills ul.cv-section-items li span.topic{ float:none; width:100%; }
+		#cv-3 ul.cv-section-items li span.level{ float:none; width:100%; }
+		
+	/* In IE for some reason it printed the tooltip as well when pressing the print button
+	   on the page. Below is the fix for this. */
+		
+	.tipsy{ display:none; margin-left:-9999px; padding:0; background:none; }
+	.tipsy-inner{ display:none; padding:0; background:none; border:none; }
+	.tipsy-north, .tipsy-south, .tipsy-east, .tipsy-west{ display:none; background:none; }
+}

@@ -1,0 +1,29 @@
+
+.slider-wrap{ position:relative; border:1px solid #e1e1e1; padding:10px; z-index:99; width:438px; height:202px; overflow:hidden !important;  }
+
+.slider ul, .slider li{ margin:0; padding:0; list-style:none; }
+
+/* define width and height of list item (slide)entire slider area will adjust according to the parameters provided here*/ 
+.slider li{ width:438px; height:202px; overflow:hidden; }
+
+/* wider slider */
+
+.slider-wrap-2{ position:relative; border:1px solid #e1e1e1; padding:10px; z-index:99; width:678px; height:312px; overflow:hidden !important;  }
+
+.slider-2 ul, .slider-2 li{ margin:0; padding:0; list-style:none; cursor:default; }
+
+/* define width and height of list item (slide)entire slider area will adjust according to the parameters provided here*/ 
+.slider-2 li{ width:678px; height:312px; overflow:hidden; }
+
+
+/* numeric controls */
+
+ol#controls{ padding:0 10px; height:28px; background-color:#fff; border:1px solid #E1E1E1;
+			 position:absolute; left:0px; bottom:15px; z-index:9999; border-left:none; }
+ol#controls li{margin:0 5px 0 0;  padding:0; float:left; list-style:none; height:28px; line-height:28px; }
+ol#controls li a{float:left; height:28px; line-height:28px; padding:0 5px; text-decoration:none; }
+ol#controls li.current a{ text-decoration:underline; }
+ol#controls li a:focus{outline:none; }
+
+
+#portfolio .portfolio-item img{ cursor:default; }
