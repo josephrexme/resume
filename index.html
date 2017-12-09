@@ -46,7 +46,7 @@
           <h2 class="cv-section-name">Profesional Profile</h2>
           <ul class="cv-section-items">
             <li class="cv-item">
-              <p>I design and code. In my years of professional software development I've learned to make architectural decisions based on requirements and budget. I have concerns for design, performance, usability, testing, and security, and I contribute to open source. Writing about my experiences in blogs has also made me better at writing specs for projects.</p>
+              <p>I design and code. With over half a decade of professional software development experience, I've learned to make architectural decisions based on requirements and budget. I have concerns for design, performance, usability, testing, and security, and I contribute to open source. Writing about my experiences in blogs has also made me better at writing specs for projects.</p>
             </li>
           </ul>
         </div>
@@ -58,20 +58,28 @@
             <li class="cv-item">
               <h4>Jun 2017 - Present</h4>
               <h1>Technical Writer</h1>
-              <h3>X-Team, Part-time</h3>
-              <h2>Projects</h2>
-              <p>I research and write articles on software development here for X-Team - <a href="https://x-team.com/blog/author/joseph">x-team.com/blog/author/joseph</a></p>
+              <h3><a href="https://x-team.com/blog/author/joseph">X-Team</a>, Part-time</h3>
+              <ul>
+                <li>I write articles that have been featured in popular newsletters including the Vue Newsletter, JSK Weekly, and more.</li>
+                <li>Wrote articles on animation, Vue, React, and others that received testimonies and impacted user acquisition.</li>
+              </ul>
             </li>
             <li class="cv-item">
               <h4>Nov 2013 - Present</h4>
               <h1>Independent Contractor</h1>
+              <ul>
+                <li>Built web apps as a fullstack contractor for over 5 startups</li>
+                <li>Designed experiences and developed frontend as a UX contractor</li>
+              </ul>
             </li>
             <li class="cv-item">
               <h4>Dec 2012 - Feb 2015</h4>
               <h1>Technical Writer</h1>
-              <h3>Infosec Institute, Part-time</h3>
-              <h2>Projects</h2>
-              <p>Security Research and Writing - <a href="http://resources.infosecinstitute.com/author/joseph-rex/">Articles</a></p>
+              <h3><a href="http://resources.infosecinstitute.com/author/joseph-rex/">Infosec Institute</a>, Part-time</h3>
+              <ul>
+                <li>Researched an ran malware analysis on windows 8</li>
+                <li>Researced different approaches to steganography and explored existing algorithms</li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -92,7 +100,7 @@
             </li>
             <li class="cv-item">
               <span class="topic">Design</span>
-              <span class="level l-4">Intermediate</span>
+              <span class="level l-5">Advanced</span>
               Photoshop CC, Illustrator CC, Adobe XD, Affinity Designer, Blender
             </li>
             <li class="cv-item">
@@ -133,7 +141,7 @@
 
       <div class="divider2"></div>
 
-      <p id="copyright">&copy; <script>var now = new Date(); document.write(now.getFullYear());</script> Joseph Rex. All rights reserved.</p>
+      <p id="copyright">&copy; <span id="currentDate"></span> Joseph Rex. All rights reserved.</p>
       <a href="#" id="top">&#710; Top</a>
 
     </div>
@@ -154,7 +162,10 @@
   <script src="layout/js/tipsy/jquery.tipsy.js"></script>
   <script src="layout/js/prettyphoto/jquery.prettyPhoto.js"></script>
   <script src="layout/js/script.js"></script>
-  <script> Cufon.now(); </script>
+  <script>
+    Cufon.now();
+    currentDate.textContent = (new Date()).getFullYear()
+  </script>
 
   <!-- Google Analytics -->
   <script>
