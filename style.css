@@ -34,6 +34,10 @@ h1,h2,h3,h4,h5,h6,p{
 h5{
 	font-weight: 300;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+}
 .resume{
 	display: block;
 	grid-template-columns: 70% 30%;
@@ -91,6 +95,11 @@ aside{
 	font-size: 1.2rem;
 	overflow: hidden;
 }
+aside nav{
+	position: relative;
+	text-align: right;
+	z-index: 10;
+}
 @media screen and (min-width: 830px){
 	aside{
 		padding: 2rem 3rem;
@@ -147,6 +156,9 @@ ul li:not(:last-child) {
 	}
 	aside section{
 		margin-top: 10rem;
+	}
+	aside nav{
+		display: none;
 	}
 	.resume{
 		display: grid;
