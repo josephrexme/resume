@@ -1,7 +1,0 @@
-/* 
-	Stylesheet for when Javascript is not available.
-*/
-
-a#print{ display:none; }
-a#download{ top:271px; }
-
