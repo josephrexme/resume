@@ -100,6 +100,16 @@ aside nav{
 	text-align: right;
 	z-index: 10;
 }
+.tools{
+	margin: .4rem 0 1rem;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.2rem;
+	color: #888;
+}
+.tools li, .tools ul{
+	display: inline;
+	font-weight: 300;
+}
 @media screen and (min-width: 830px){
 	aside{
 		padding: 2rem 3rem;
@@ -133,8 +143,11 @@ ul{
 	margin: 0;
 	padding: 0;
 }
-ul li:not(:last-child) {
+section ul li:not(:last-child) {
 	margin-bottom: .5rem;
+}
+.tools ul li:not(:last-child)::after{
+	content: ',';
 }
 
 @media print{
@@ -148,7 +161,7 @@ ul li:not(:last-child) {
 		size: A4;
 	}
 	html{
-		font-size: 46%;
+		font-size: 42%;
 	}
 	aside{
 		padding: 2rem 3rem;
