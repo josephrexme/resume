@@ -132,6 +132,9 @@ section ul li:not(:last-child) {
 .tools ul li:not(:last-child)::after{
 	content: ',';
 }
+#email::after{
+  content: attr(data-name) "@" attr(data-provider)
+}
 
 @media print{
 	*{
