@@ -48,16 +48,16 @@ main h5{
 	color: #555;
 }
 main section{
-	margin-top: 4rem;
+	margin-top: 2.5rem;
 }
 .experience:not(:first-of-type){
 	position: relative;
-	margin-top: 3.5rem;
+	margin-top: 2.5rem;
 }
 .experience:not(:first-of-type)::before{
 	content: '';
 	position: absolute;
-	top: -2rem;
+	top: -1rem;
 	left: calc(50% - 10rem);
 	width: 20rem;
 	height: 0;
@@ -68,6 +68,10 @@ main section{
 }
 .experience h3{
   color: var(--theme-color);
+}
+ul.experience-points{
+  list-style-type: disc;
+  margin-left: 2rem;
 }
 aside{
 	position: relative;
