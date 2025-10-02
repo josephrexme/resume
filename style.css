@@ -48,7 +48,7 @@ main h5{
 	color: #555;
 }
 main section{
-	margin-top: 2.5rem;
+	margin-top: 1rem;
 }
 .experience:not(:first-of-type){
 	position: relative;
