@@ -81,10 +81,15 @@ main section{
   font-size: 1.4rem;
   color: var(--theme-color-2);
 }
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .icon {
   vertical-align: text-bottom;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 .italic {
   font-style: italic;
