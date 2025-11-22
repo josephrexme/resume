@@ -29,17 +29,11 @@ a{
 }
 .resume{
 	display: block;
-	grid-template-columns: 75% 25%;
 	margin: 5rem auto;
 	width: 100%;
 	max-width: 1100px;
 	background: #fff;
 	overflow: hidden;
-}
-@media screen and (min-width: 830px) {
-	.resume{
-		display: grid;
-	}
 }
 main{
 	padding: 3rem;
@@ -98,20 +92,6 @@ ul.experience-points{
   list-style-type: disc;
   margin-left: 2rem;
 }
-aside{
-	position: relative;
-	padding: 4rem 2rem;
-	background: #ebebeb;
-	font-size: 1.4rem;
-	overflow: hidden;
-}
-aside nav{
-	position: relative;
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-	z-index: 10;
-}
 .tools{
 	margin: .4rem 0 1rem;
 	font-size: 1.2rem;
@@ -120,19 +100,6 @@ aside nav{
 .tools li, .tools ul{
 	display: inline;
 	font-weight: 300;
-}
-@media screen and (min-width: 830px){
-	aside{
-		padding: 2rem;
-	}
-}
-aside section{
-	margin-top: 4rem;
-}
-@media screen and (min-width: 830px){
-	aside section{
-		margin-top: 10rem;
-	}
 }
 h1{
 	color: var(--theme-color);
@@ -179,24 +146,11 @@ section ul li:not(:last-child) {
     widows: 3;
   }
   h2,h3{ page-break-after: avoid; }
-	aside{
-		padding: 2rem 3rem;
-		background: none !important;
-	}
-	aside section{
-		margin-top: 10rem;
-	}
-	aside nav{
-		display: none;
-	}
 	.resume{
 		display: grid;
 		width: 100%;
 		max-width: 100%;
 		margin: 0;
-	}
-	.circle{
-		background: var(--theme-color) !important;
 	}
   .icon { display: none }
 }
