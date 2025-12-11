@@ -153,4 +153,8 @@ section ul li:not(:last-child) {
 		margin: 0;
 	}
   .icon { display: none }
+  .page-break {
+    break-before: always;
+    page-break-before: always;
+  }
 }
